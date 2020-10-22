@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+div, img {
+    width: 350px;
+    height: 350px;
+}
+
+h4 {
+    font-family: "Arial Narrow", sans-serif;
+    width: 110px;
+    text-transform: uppercase;
+    border-bottom: 2px grey solid;
+    padding-bottom: 10px;
+    margin: 40px 0 20px;
+}
+
+img {
+    position: absolute;
+}
+
+p {
+    font-family: "Georgia", sans-serif;
+}
+
+.block_text {
+    background: #C4DCD9;
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding: 30px;
+}
+
+.general {
+    position: relative;
+    margin: auto;
+}
+
+.block_text:hover {
+    opacity: 0;
+}
+
+.block_img:hover, .block_text:hover {
+    transform: rotateY(180deg);
+    transition: 3s;
+}
