@@ -16,31 +16,38 @@ h4 {
     margin: 40px 0 20px;
 }
 
-img {
-    position: absolute;
-}
-
 p {
     font-family: "Georgia", sans-serif;
 }
 
-.block_text {
-    background: #C4DCD9;
+.block_img {
     position: absolute;
+}
+
+.block_text {
+    position: absolute;
+    background: #C4DCD9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
     padding: 30px;
+    transform: rotateY(180deg);
 }
 
 .general {
     position: relative;
-    margin: auto;
 }
 
-.block_text:hover {
+.general {
+    margin: 100px auto;
+}
+
+.general:hover .block_img {
+    transform: rotateY(180deg);
+    transition: 3s;
     opacity: 0;
 }
 
-.block_img:hover, .block_text:hover {
-    transform: rotateY(180deg);
+.general:hover .block_text {
+    transform: rotateY(360deg);
     transition: 3s;
+    opacity: 1;
 }
